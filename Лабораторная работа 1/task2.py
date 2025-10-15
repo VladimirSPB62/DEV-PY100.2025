@@ -1,10 +1,13 @@
-# TODO заменить значение пропущенного элемента средним арифметическим.
-numbers = [2, -93, -2, 8, None, -44, -1, -85, -14, 90, -22, -90, -100, -8, 38, -92, -45, 67, 53, 25]
+# TODO Разделите участников на две команды
+list_players = ["Маша", "Петя", "Саша", "Оля", "Кирилл", "Коля"]
 
-list_len = len(numbers)  # Определяем длину списка.
-nums_sum = sum(numbers[:4]) + sum(numbers[5:])  # Определяем сумму элементов списка.
-num_average = nums_sum / list_len  # Вычисляем среднее арифметическое.
-numbers[4] = num_average  # Заменяем пропуск.
+# Количество игроков в списке.
+num = len(list_players)
 
-# Выводим на печать измененный список.
-print("Измененный список:", numbers)
+# Делим игроков на команды.
+part = num // 2
+players1 = list_players[:part]
+players2 = list_players[part:]
+
+print(players1)
+print(players2)
