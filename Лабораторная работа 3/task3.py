@@ -45,7 +45,7 @@ def calculate_frequency(letter_count: dict) -> dict:
     for key, value in letter_count.items():
         # Расчёт частоты: значение / общая сумма.
         calculate = value / total_letters
-        # Округляем до 2 знаков и сохраняем в новом словаре.
+        # Сохраняем в новом словаре.
         new_total_letters[key] = calculate
     return new_total_letters
 
